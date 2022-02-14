@@ -21,7 +21,7 @@
 			<header id="header">
 				<div class="content">
 					<h1><a href="#">Rueda de la Vida</a></h1>
-					<p>Una herramienta para evaluar tu proyecto de vida.</p>
+					<p>Una herramienta para auto-evaluación.</p>
 					<!--template brought to you by <a href="http://html5up.net">HTML5 UP</a></p>
 					<ul class="actions">
 						<li><a href="#" class="button primary icon solid fa-download">Download</a></li>
@@ -55,9 +55,9 @@
 		<!-- Three -->
 			<section id="three" class="wrapper" style="max-width:800px; margin:auto;">
 				<header class="major">
-					<h2>Guarda tu Rueda de Vida</h2>
-					<p>Los datos capturados en esta página son anónimos y no se pueden recuperar personalmente.<br/><br/>
-					Si quieres conservar una copia una vez completado el ejercicio puedes bajar la Rueda de Vida como una imagen.
+					<h2>Guarda tu Rueda de la Vida</h2>
+					<p>Asigna una calificación en cada una de las 10 áreas para una vida integral. Los datos capturados en esta página son anónimos y no se pueden recuperar posteriormente.<br/><br/>
+					Si quieres conservar una copia una vez completado el ejercicio puedes bajar la Rueda de la Vida como una imagen haciendo clic en el botón abajo.
 					</p>
 				</header>
 				<ul class="actions special">
@@ -70,26 +70,96 @@
 			<section id="two" class="wrapper">
 				<div class="inner alt">
 					<section class="spotlight">
-						<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+						<div class="image"><img src="images/crecimiento.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Magna sed ultrices</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h3>Crecimiento Personal</h3>
+							<p>La percepción de fortalezas, tu independencia y eficacia, autoconocimiento, propósitos claros, etc.</p>
+							<label for="crecimiento">Calificación (entre 0 y 10):</label>
+  							<input type="number" id="crecimiento" name="quantity" min="0" max="10" onchange="cambiavalor(0,this.value);">
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+						<div class="image"><img src="images/amigos.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Ultrices nullam aliquam</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h3>Amigos</h3>
+							<p>¿Me gustan los amigos y las relaciones de amistad que he formado en lo que tengo de vida? ¿Dedico tiempo a cultivar las amistades, mis pláticas son constructivas, me edifican? ¿O me alejan de un crecimiento personal y mi cercanía con Dios?</p>
+							<label for="amigos">Calificación (entre 0 y 10):</label>
+							<input type="number" id="amigos" name="quantity" min="0" max="10" onchange="cambiavalor(1,this.value);">
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+						<div class="image"><img src="images/family.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Aliquam sed magna</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h3>Familia</h3>
+							<p>¿Tengo un tiempo especial en el día para escuchar a mi familia y para interactuar con ellos, siento el apoyo de mi familia? ¿Apoyo yo a mi familia, se sus inquietudes?</p>
+							<label for="familia">Calificación (entre 0 y 10):</label>
+							<input type="number" id="familia" name="quantity" min="0" max="10" onchange="cambiavalor(2,this.value);">
 						</div>
 					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/salud.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Salud</h3>
+							<p>¿Estoy al pendiente de mi salud corporal, mi peso, mis hábitos de higiene, mi salud mental, con qué nutro mi mente, permito pensamientos que me quitan la paz, mi salud emocional, me permito expresar lo que siento o prefiero ignorarlo?</p>
+							<label for="salud">Calificación (entre 0 y 10):</label>
+							<input type="number" id="salud" name="quantity" min="0" max="10" onchange="cambiavalor(3,this.value);">
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/estudio.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Negocio-Estudios</h3>
+							<p>¿He dedicado tiempo a mi crecimiento estudiando algún curso, dando algún taller, he explotado mis conocimientos, he iniciado un negocio personal, propio?</p>
+							<label for="estudios">Calificación (entre 0 y 10):</label>
+							<input type="number" id="estudios" name="quantity" min="0" max="10" onchange="cambiavalor(4,this.value);">
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/ocio.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Ocio-Diversión</h3>
+							<p>¿Tengo tiempo libre para mi, en lo individual, disfruto el tiempo libre o me aburro?</p>
+							<label for="ocio">Calificación (entre 0 y 10):</label>
+							<input type="number" id="ocio" name="quantity" min="0" max="10" onchange="cambiavalor(5,this.value);">
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/contribucion.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Contribución</h3>
+							<p>¿Apoyo a algina comunidad, desde niños, adultos mayores con donación no solo de dinero, de mi tiempo, enseño al qie no sabe? ¿Apoyo en mi parroquia fuera de mi área de siempre? ¿Contribuyo fuera de mi esfera social y espiritual?</p>
+							<label for="contribucion">Calificación (entre 0 y 10):</label>
+							<input type="number" id="contribucion" name="quantity" min="0" max="10" onchange="cambiavalor(6,this.value);">
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/amor.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Amor</h3>
+							<p>¿Tengo capacidad para conectarme con otras personas, el sentir aprecio, cariño, amor por los amigos, pareja, me siento querido y me gusta esa sensación, soy fiel a las personas que me quieren y a las que quiero, cuando alguien me agrada se comunicárselo?</p>
+							<label for="amor">Calificación (entre 0 y 10):</label>
+							<input type="number" id="amor" name="quantity" min="0" max="10" onchange="cambiavalor(7,this.value);">
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/finanzas.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Finanzas</h3>
+							<p>Satisfacción con tu equilibrio gastos-ingresos, inversiones, patrimonio, ahorro y estrategias.</p>
+							<label for="finanzas">Calificación (entre 0 y 10):</label>
+							<input type="number" id="finanzas" name="quantity" min="0" max="10" onchange="cambiavalor(8,this.value);">
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/espiritualidad.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Espiritualidad</h3>
+							<p>Tiempo dedicado a tu diálogo con Dios, tu tiempo de oración, coherencia espiritual y emocional.</p>
+							<label for="espiritu">Calificación (entre 0 y 10):</label>
+							<input type="number" id="espiritu" name="quantity" min="0" max="10" onchange="cambiavalor(9,this.value);">
+						</div>
+					</section>
+
 					<section class="special">
 						<ul class="icons labeled">
 							<li><span class="icon solid fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
@@ -97,6 +167,12 @@
 							<li><span class="icon solid fa-cloud"><span class="label">Elit fusce consequat</span></span></li>
 							<li><span class="icon solid fa-code"><span class="label">Lorem nullam tempus</span></span></li>
 							<li><span class="icon solid fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
+						</ul>
+					</section>
+
+					<section>
+						<ul class="actions">
+							<li><a href="#one" class="button icon solid fa-chevron-up scrolly">Ver Mi Rueda de la Vida</a></li>
 						</ul>
 					</section>
 				</div>
@@ -425,12 +501,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 			<footer id="footer">
+				<!--
 				<ul class="icons">
 					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 				</ul>
-				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+				-->
+				<p class="copyright">&copy; Pendiente. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
 			</footer>
 
 		<!-- Scripts -->
@@ -448,6 +526,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					link.download = 'RuedaDeVida';
 					link.href = document.getElementById('myChart').toDataURL()
 					link.click();
+				}
+
+				function cambiavalor(i, y) {
+
+					myChart.data.datasets[0].data[i]= y
+					myChart.update()
+
 				}
 			</script>
 
@@ -480,7 +565,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						labels: ['Crecimiento Personal', 'Amigos', 'Familia', 'Salud', 'Negocio-Estudios', 'Ocio-Diversión', 'Contribución', 'Amor', 'Finanzas', 'Espiritualidad'],
 						datasets: [{
 							label: 'Calificación',
-							data: [8, 5, 7, 5, 5, 3, 5, 5, 9, 5],
+							data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 							backgroundColor: [
 								'rgba(255, 99, 132, 0.2)',
 								'rgba(54, 162, 235, 0.2)',
