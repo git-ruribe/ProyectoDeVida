@@ -35,7 +35,7 @@
 			</header>
 
 		<!-- One -->
-			<section id="one" class="wrapper style2 special" style="height:60vh; vertical-align:middle;">
+			<section id="one" class="wrapper special" style="height:65vh; vertical-align:middle;">
 				<!--
 				<header class="major">
 					<h2>Sed ipsum magna lorem tempus amet<br />
@@ -524,7 +524,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					console.log("Pelos");
 					var link = document.createElement('a');
 					link.download = 'RuedaDeVida';
-					link.href = document.getElementById('myChart').toDataURL()
+					link.href = document.getElementById('myChart').toDataURL("image/jp");
 					link.click();
 				}
 
@@ -552,7 +552,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						const ctx = chart.canvas.getContext('2d');
 						ctx.save();
 						ctx.globalCompositeOperation = 'destination-over';
-						ctx.fillStyle = 'lightGreen';
+						ctx.fillStyle = 'white';
 						ctx.fillRect(0, 0, chart.width, chart.height);
 						ctx.restore();
 					}
@@ -593,6 +593,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							borderWidth: 1
 						}]
 					},
+					plugins: [plugin],
 					options: {
 						responsive: true,
 						scales: {
