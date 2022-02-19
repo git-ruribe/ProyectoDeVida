@@ -2126,6 +2126,7 @@ input, select, textarea {
 			content: '\f00c';
 		}
 
+
 	input[type="checkbox"] + label:before {
 		border-radius: 6px;
 	}

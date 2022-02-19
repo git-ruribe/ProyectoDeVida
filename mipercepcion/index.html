@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mi Percepción de mi mismo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1><a href="#">Mi Percepción de mi Mismo</a></h1>
+					<p>Una herramienta para auto-evaluación.</p>
+					<!--template brought to you by <a href="http://html5up.net">HTML5 UP</a></p>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Download</a></li>
+						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
+					</ul>
+				-->
+				</div>
+				<!--
+				<div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="" /></div></div>
+				-->
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper" style="max-width:800px; margin:auto;">
+				<header class="major">
+					<h2>Responde a las siguientes preguntas</h2>
+					<p>Una vez completado el ejercicio se contabilizarán los SI y NO para hacer un diagnóstico
+					</p>
+				</header>
+				<form method="post" action="#"></form>
+				<ol>
+					<li>¿Te duelen las críticas de los demás?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q1Y" name="q1" >
+							<label for="q1Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q1N" name="q1">
+							<label for="q1N">No</label>
+						</div>
+					</li>
+					<li>¿Te asustan las nuevas experiencias?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q2Y" name="q2" >
+							<label for="q2Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q2N" name="q2">
+							<label for="q2N">No</label>
+						</div>
+					</li>
+					<li>¿Hablas a los demás de tus triunfos personales?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q3Y" name="q3" >
+							<label for="q3Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q3N" name="q3">
+							<label for="q3N">No</label>
+						</div>
+					</li>
+					<li>¿Intentas hacer a los demás responsables de tus errores?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q4Y" name="q4" >
+							<label for="q4Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q4N" name="q4">
+							<label for="q4N">No</label>
+						</div>
+					</li>
+					<li>¿Tienes tendencia a ser demasiado tímido o agresivo?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q5Y" name="q5" >
+							<label for="q5Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q5N" name="q5">
+							<label for="q5N">No</label>
+						</div>
+					</li>
+					<li>¿Intentas ocultar lo que sientes?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q6Y" name="q6" >
+							<label for="q6Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q6N" name="q6">
+							<label for="q6N">No</label>
+						</div>
+					</li>
+					<li>¿Te averguenzas de tu apariencia física?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q7Y" name="q7" >
+							<label for="q7Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q7N" name="q7">
+							<label for="q7N">No</label>
+						</div>
+					</li>
+					<li>¿Te tranquiliza que los demás fracasen?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q8Y" name="q8" >
+							<label for="q8Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q8N" name="q8">
+							<label for="q8N">No</label>
+						</div>
+					</li>
+					<li>¿Te sientes incómodo en las relaciones personales?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q9Y" name="q9" >
+							<label for="q9Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q9N" name="q9">
+							<label for="q9N">No</label>
+						</div>
+					</li>
+					<li>¿Siempre encuentas excusas para no cambiar?
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q10Y" name="q10" >
+							<label for="q10Y">Si</label>
+						</div>
+						<div class="col-4 col-12-small">
+							<input type="radio" id="q10N" name="q10">
+							<label for="q10N">No</label>
+						</div>
+					</li>
+				</ol>
+				<ul class="actions special">
+				<li><a class="button primary icon solid fa-download" onclick="calcular()">CALCULAR RESULTADO</a></li>
+				</ul>
+
+			</form>
+			</section>
+
+			<section class="wrapper" style="max-width:800px; margin:auto;">
+				<div id="respuestas" class="content" hidden>
+					<h2>Tus respuestas :</h2>
+					<p> Contestaste SI en <span id="sis"></span> preguntas</p>
+					<p> Contestaste NO en <span id="nos"></span> preguntas</p>
+					<p> <b>Si has respondido SI a la mayoría de las preguntas, debes trabajar en la percepción de ti mismo.</b></p>
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<!--
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				-->
+				<p class="copyright">&copy; Pendiente. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			
+
+			<script>
+				function calcular() {
+					var sis = 0;
+					var nos = 0;
+
+					if (document.getElementById("q1Y").checked) {sis=sis+1;}
+					if (document.getElementById("q1N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q2Y").checked) {sis=sis+1;}
+					if (document.getElementById("q2N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q3Y").checked) {sis=sis+1;}
+					if (document.getElementById("q3N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q4Y").checked) {sis=sis+1;}
+					if (document.getElementById("q4N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q5Y").checked) {sis=sis+1;}
+					if (document.getElementById("q5N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q6Y").checked) {sis=sis+1;}
+					if (document.getElementById("q6N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q7Y").checked) {sis=sis+1;}
+					if (document.getElementById("q7N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q8Y").checked) {sis=sis+1;}
+					if (document.getElementById("q8N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q9Y").checked) {sis=sis+1;}
+					if (document.getElementById("q9N").checked) {nos=nos+1;}
+					
+					if (document.getElementById("q10Y").checked) {sis=sis+1;}
+					if (document.getElementById("q10N").checked) {nos=nos+1;}
+
+					console.log("Sis :" + sis);
+					console.log("Nos :" + nos);
+
+					document.getElementById("respuestas").hidden = false;
+					document.getElementById("sis").innerHTML = sis;
+					document.getElementById("nos").innerHTML = nos;
+				}
+			</script>
+
+
+	</body>
+</html>
